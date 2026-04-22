@@ -1,13 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  color: white;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
 main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
 }
 
+
+.instructions {
+  font-size: 0.95rem;
+  opacity: 0.8;
+  margin-bottom: 2rem;
+}
+
+
+button:active {
+  transform: translateY(0);
+}
+
+#reset-button {
+  background: #ff6b6b;
+  color: white;
+}
+
+#reset-button:hover {
+  background: #ff5252;
+}
+
 .movie-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 3rem;
   padding: 2rem 0;
 }
 
@@ -54,3 +104,54 @@ main {
   font-size: 0.95rem;
   margin: 0.3rem 0;
 }
+
+.movie-image {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.movie-card--highlight {
+  border: 2px solid gold;
+}
+
+.genre-row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+}
+
+#genre-select {
+  min-width: 260px;
+  padding: 0.75rem 0.9rem;
+  border-radius: 12px;
+  border: 2px solid white;
+  font-size: 1rem;
+}
+
+.movie-count {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  white-space: nowrap;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 2fr 1fr; 
+  gap: 1rem;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.control-group input, 
+.control-group select {
+  width: 100%;
+}
+
+

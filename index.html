@@ -3,21 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Movie App - DAG 2</title>
+    <title>Movie App - DAG 3</title>
     <link rel="stylesheet" href="app.css" />
   </head>
   <body>
     <header>
       <h1>Movie App</h1>
-      <p>DAG 2: Arrays, loops & Filmlister</p>
+      <p>DAG 3: Fetch, JSON & Genre-filter</p>
     </header>
 
     <main>
-  <section id="movie-list" class="movie-grid" aria-label="Filmliste">
-    <!-- Film vises her med JavaScript -->
-  
-  </section>
-</main>
+      <section class="controls">
+        <div class="control-group">
+          <label for="search-input">Søg på titel</label>
+          <input 
+          type="text" 
+          id="search-input" 
+          placeholder="Søg efter film..." />
+        </div>
+        
+        <div class="genre-row">
+          <label for="genre-select">Genre</label>
+          <select id="genre-select">
+            <option value="all">Alle genrer</option>
+          </select>
+          <span id="movie-count" class="movie-count"></span>
+        </div>
+      </section>
+
+      <section id="movie-list" class="movie-grid" aria-label="Filmliste">
+        <!-- Film vises her med JavaScript -->
+      </section>
+    </main>
 
     <script src="app.js"></script>
   </body>
